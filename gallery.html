@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10271d" />
+  <meta name="description" content="Gallery of dining and dishes inspired by Sri Venkateswara Family Garden Restaurant & Dhaba A/C." />
+  <title>Gallery | Sri Venkateswara Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Placeholder photos · replace with restaurant-owned images before commercial use</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Sri Venkateswara home">
+      <span class="brand-mark" aria-hidden="true">SV</span>
+      <span class="brand-copy">
+        <strong>Sri Venkateswara</strong>
+        <small>FAMILY GARDEN RESTAURANT &amp; DHABA A/C</small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="menu.html">Menu</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Visit Us</a>
+      <button class="cart-nav" id="openCart" type="button">Your cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-hero gallery-hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> GALLERY</p>
+        <h1>Tables, plates<br><em>and evenings.</em></h1>
+        <p class="hero-description">A look at the kind of dining room and dishes we serve. Official restaurant photographs can replace these placeholders anytime.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="gallery-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Restaurant dining room" loading="lazy">
+          <figcaption>Indoor dining</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=85" alt="Biryani" loading="lazy">
+          <figcaption>Dum biryani</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=85" alt="Chicken curry" loading="lazy">
+          <figcaption>Kajju chicken</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=85" alt="Set dining table" loading="lazy">
+          <figcaption>Family table</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=85" alt="Restaurant evening lighting" loading="lazy">
+          <figcaption>Evening service</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=85" alt="South Indian meals" loading="lazy">
+          <figcaption>Andhra meals</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=85" alt="Masala dosa" loading="lazy">
+          <figcaption>Tiffins</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=85" alt="Restaurant seating" loading="lazy">
+          <figcaption>A/C hall</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">SV</span>
+          <span class="brand-copy"><strong>Sri Venkateswara</strong><small>FAMILY GARDEN RESTAURANT &amp; DHABA A/C</small></span>
+        </a>
+        <p class="footer-tagline">Good food. Warm company.</p>
+        <p>Pedavullagallu, Kellampalli, Andhra Pradesh 523265</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Reservations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li>Dine-in · Takeaway · Delivery</li>
+          <li>Typical hours: 11:00 AM – 10:30 PM</li>
+          <li>Please confirm before travelling</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Note</h3>
+        <p>Menu, prices and hours are sample details for this website. Confirm with the restaurant before ordering or visiting.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Sri Venkateswara Family Garden Restaurant &amp; Dhaba A/C</span><a href="index.html">Home ↑</a></div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">YOUR ORDER</p><h2>Your <em>cart</em></h2></div><button id="closeCart" class="close-cart" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Estimated total</span><strong id="cartTotal">—</strong></div>
+      <p class="cart-small">Sample prices only.</p>
+      <button class="button button-gold checkout-button" id="checkoutButton">Continue to checkout</button>
+    </div>
+  </aside>
+  <div class="modal-backdrop" id="checkoutBackdrop" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="close-modal" id="closeCheckout" aria-label="Close checkout">×</button>
+      <p class="eyebrow">ALMOST THERE</p>
+      <h2 id="checkoutTitle">Order <em>details.</em></h2>
+      <p class="checkout-intro">This website prepares a summary only.</p>
+      <form id="checkoutForm">
+        <label for="customerName">Full name</label>
+        <input id="customerName" name="customerName" autocomplete="name" required placeholder="Enter your name">
+        <label for="customerPhone">Phone number</label>
+        <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required placeholder="Enter your phone number">
+        <label for="orderType">Order type</label>
+        <select id="orderType" name="orderType" required>
+          <option value="Pickup">Pickup / takeaway</option>
+          <option value="Dine-in">Dine-in</option>
+          <option value="Delivery">Delivery</option>
+        </select>
+        <label for="customerAddress">Address or special instructions <span>(optional)</span></label>
+        <textarea id="customerAddress" name="customerAddress" rows="3"></textarea>
+        <div class="checkout-notice">No payment will be taken here.</div>
+        <button class="button button-gold checkout-submit" type="submit">Prepare order summary</button>
+      </form>
+      <div id="orderConfirmation" class="order-confirmation" hidden aria-live="polite"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

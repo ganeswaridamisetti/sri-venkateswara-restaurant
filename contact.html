@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10271d" />
+  <meta name="description" content="Find Sri Venkateswara Family Garden Restaurant & Dhaba A/C in Pedavullagallu, Kellampalli. Hours, map and table requests." />
+  <title>Visit Us | Sri Venkateswara Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Hours can vary · please confirm before travelling</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Sri Venkateswara home">
+      <span class="brand-mark" aria-hidden="true">SV</span>
+      <span class="brand-copy">
+        <strong>Sri Venkateswara</strong>
+        <small>FAMILY GARDEN RESTAURANT &amp; DHABA A/C</small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="contact.html">Visit Us</a>
+      <button class="cart-nav" id="openCart" type="button">Your cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-hero contact-hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> FIND US</p>
+        <h1>We’ll save<br>a place <em>for you.</em></h1>
+        <p class="hero-description">Pedavullagallu, Kellampalli, Andhra Pradesh 523265. Request a table below, then confirm with the restaurant.</p>
+      </div>
+    </section>
+
+    <section class="section contact-grid">
+      <div class="info-card">
+        <p class="eyebrow">LOCATION</p>
+        <h2>Come by and <em>say hello.</em></h2>
+        <div class="address-card">
+          <span class="address-icon">⌖</span>
+          <div>
+            <strong>Sri Venkateswara Family Garden Restaurant &amp; Dhaba A/C</strong>
+            <p>Pedavullagallu, Kellampalli,<br>Andhra Pradesh 523265</p>
+            <small>Plus code: RQ34+JQ, Pedavullagallu</small>
+          </div>
+        </div>
+        <p class="eyebrow" style="margin-top:28px">TYPICAL HOURS</p>
+        <table class="hours-table">
+          <tr><td>Monday – Thursday</td><td>11:00 AM – 10:30 PM</td></tr>
+          <tr><td>Friday – Sunday</td><td>11:00 AM – 11:00 PM</td></tr>
+        </table>
+        <p class="hours-note" style="max-width:none;margin-top:12px">A full official schedule was not supplied. These hours are a typical dining pattern — please verify before you travel.</p>
+        <div class="visit-actions" style="margin-top:24px">
+          <a class="button button-gold" href="https://www.google.com/maps/search/?api=1&query=Sri+Venkateswara+Family+Garden+Restaurant+Dhaba+Pedavullagallu+Andhra+Pradesh+523265" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+        </div>
+      </div>
+      <div class="form-card">
+        <p class="eyebrow">RESERVATIONS</p>
+        <h2>Request a <em>table.</em></h2>
+        <p class="muted">This form prepares a request on your device. It does not email the restaurant until a backend is connected.</p>
+        <form id="reservationForm">
+          <div class="two-col">
+            <div>
+              <label for="guestName">Full name</label>
+              <input id="guestName" name="guestName" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div>
+              <label for="guestPhone">Phone</label>
+              <input id="guestPhone" name="guestPhone" type="tel" required autocomplete="tel" placeholder="Mobile number">
+            </div>
+          </div>
+          <div class="two-col">
+            <div>
+              <label for="guestCount">Guests</label>
+              <select id="guestCount" name="guestCount" required>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4" selected>4 guests</option>
+                <option value="6">6 guests</option>
+                <option value="8">8 guests</option>
+                <option value="10+">10 or more</option>
+              </select>
+            </div>
+            <div>
+              <label for="visitDate">Date</label>
+              <input id="visitDate" name="visitDate" type="date" required>
+            </div>
+          </div>
+          <label for="visitTime">Preferred time</label>
+          <select id="visitTime" name="visitTime" required>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>1:30 PM</option>
+            <option>7:00 PM</option>
+            <option selected>8:00 PM</option>
+            <option>8:30 PM</option>
+            <option>9:00 PM</option>
+          </select>
+          <label for="guestNotes">Occasion or notes <span>(optional)</span></label>
+          <textarea id="guestNotes" name="guestNotes" rows="3" placeholder="Birthday, family gathering, high chair…"></textarea>
+          <div class="form-notice">Please phone the restaurant to confirm seating, especially for large groups.</div>
+          <button class="button button-gold" type="submit">Prepare table request</button>
+        </form>
+        <div id="reservationConfirmation" class="order-confirmation" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="map-embed">
+        <iframe title="Map of Pedavullagallu, Kellampalli" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Pedavullagallu%20Kellampalli%20Andhra%20Pradesh%20523265&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">SV</span>
+          <span class="brand-copy"><strong>Sri Venkateswara</strong><small>FAMILY GARDEN RESTAURANT &amp; DHABA A/C</small></span>
+        </a>
+        <p class="footer-tagline">Good food. Warm company.</p>
+        <p>Pedavullagallu, Kellampalli, Andhra Pradesh 523265</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Reservations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li>Dine-in · Takeaway · Delivery</li>
+          <li>Typical hours: 11:00 AM – 10:30 PM</li>
+          <li>Please confirm before travelling</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Note</h3>
+        <p>Menu, prices and hours are sample details for this website. Confirm with the restaurant before ordering or visiting.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Sri Venkateswara Family Garden Restaurant &amp; Dhaba A/C</span><a href="index.html">Home ↑</a></div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">YOUR ORDER</p><h2>Your <em>cart</em></h2></div><button id="closeCart" class="close-cart" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Estimated total</span><strong id="cartTotal">—</strong></div>
+      <p class="cart-small">Sample prices only.</p>
+      <button class="button button-gold checkout-button" id="checkoutButton">Continue to checkout</button>
+    </div>
+  </aside>
+  <div class="modal-backdrop" id="checkoutBackdrop" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="close-modal" id="closeCheckout" aria-label="Close checkout">×</button>
+      <p class="eyebrow">ALMOST THERE</p>
+      <h2 id="checkoutTitle">Order <em>details.</em></h2>
+      <p class="checkout-intro">This website prepares a summary only.</p>
+      <form id="checkoutForm">
+        <label for="customerName">Full name</label>
+        <input id="customerName" name="customerName" autocomplete="name" required placeholder="Enter your name">
+        <label for="customerPhone">Phone number</label>
+        <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required placeholder="Enter your phone number">
+        <label for="orderType">Order type</label>
+        <select id="orderType" name="orderType" required>
+          <option value="Pickup">Pickup / takeaway</option>
+          <option value="Dine-in">Dine-in</option>
+          <option value="Delivery">Delivery</option>
+        </select>
+        <label for="customerAddress">Address or special instructions <span>(optional)</span></label>
+        <textarea id="customerAddress" name="customerAddress" rows="3"></textarea>
+        <div class="checkout-notice">No payment will be taken here.</div>
+        <button class="button button-gold checkout-submit" type="submit">Prepare order summary</button>
+      </form>
+      <div id="orderConfirmation" class="order-confirmation" hidden aria-live="polite"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
